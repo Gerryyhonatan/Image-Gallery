@@ -1,34 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    line-height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 body {
-    background-color: #ccc;
-    text-align: center;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.judul {
+  height: 20px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0 auto;
 }
 
 .container {
-    width: 600px;
-    margin: 10px auto;
-    border: 5px solid white;
-    overflow: auto;
+  width: 600px;
+  margin: 10px auto;
+  border: 5px solid white;
+  overflow: auto;
 }
 
-.jumbo{
-    width: 600px;
-    height: 500px;
+.jumbo {
+  width: 600px;
+  height: 500px;
 }
 
 .thumb {
-    width: 200px;
-    float: left;
-    border: 2px solid white;
-    box-sizing: border-box;
+  width: 200px;
+  float: left;
+  border: 2px solid white;
+  box-sizing: border-box;
 }
 
 .thumb:hover {
-    opacity: 0.5;
-    cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.active {
+  opacity: 0.5;
 }
